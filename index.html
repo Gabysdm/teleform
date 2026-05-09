@@ -1,0 +1,126 @@
+<html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleForm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+        <h1>TeleForm</h1>
+        <p>Sistema de Chat</p>
+      </div>
+    </div>
+    <nav>
+      <button onclick="mostrarPagina('login')">Login</button>
+      <button onclick="mostrarPagina('chat')">Chat</button>
+      <button onclick="mostrarPagina('devs')">Desenvolvedores</button>
+      <button onclick="mostrarPagina('tecnologias')">Tecnologias</button>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main>
+
+    <!-- PÁGINA: LOGIN -->
+    <div id="pagina-login" class="pagina ativa">
+      <h2>Login</h2>
+      <div class="cartao">
+
+        <label for="campo-usuario">Usuário</label>
+        <input id="campo-usuario" type="text" placeholder="Digite seu usuário">
+
+        <label for="campo-senha">Senha</label>
+        <input id="campo-senha" type="password" placeholder="Digite sua senha" onkeydown="if(event.key==='Enter') fazerLogin()">
+
+        <button class="btn-entrar" onclick="fazerLogin()">Entrar</button>
+
+        <p class="dica-usuarios">
+          Usuários: Marcelo/Teste123 · Júlia/Julia123 · Gabrielly/Linda123 · Sarah/Sarah123 · Luiz/Luiz123
+        </p>
+      </div>
+    </div>
+
+    <!-- PÁGINA: CHAT -->
+    <div id="pagina-chat" class="pagina">
+      <div class="chat-topo">
+        <h2>Chat</h2>
+        <button class="btn-sair" onclick="fazerLogout()">Sair</button>
+      </div>
+
+      <div class="abas">
+        <button class="aba ativa" id="aba-1" onclick="abrirChat(1)">🎓 Turma INF3</button>
+        <button class="aba" id="aba-2" onclick="abrirChat(2)"> Dúvidas PI</button>
+      </div>
+
+      <div class="cartao" style="padding: 0;">
+        <div id="area-mensagens"></div>
+        <div class="campo-envio">
+          <input id="campo-mensagem" type="text" placeholder="Digite sua mensagem..."onkeydown="
+            if(event.key==='Enter') enviarMensagem()">
+          <button class="btn-enviar" onclick="enviarMensagem()">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PÁGINA: DESENVOLVEDORES -->
+    <div id="pagina-devs" class="pagina">
+      <h2>Desenvolvedores</h2>
+      <div class="devs">
+        <div class="card-dev">
+          <img src="fotos/julinhainha.jpg" alt="Júlia Pontes" />
+          <p>Júlia Pontes</p>
+          <span>CSS</span>
+        </div>
+        <div class="card-dev">
+          <img src="fotos/gaby.jpg" alt="Lindalva Gabrielly" />
+          <p>Lindalva Gabrielly</p>
+          <span>JavaScript</span>
+        </div>
+        <div class="card-dev">
+          <img src="fotos/sarinhainha.jpg" alt="Sarah Joquebede" />
+          <p>Sarah Joquebede</p>
+          <span>JavaScript</span>
+        </div>
+        <div class="card-dev">
+          <img src="fotos/lulu.jpg" alt="Luiz Henrique" />
+          <p>Luiz Henrique</p>
+          <span>HTML</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PÁGINA: TECNOLOGIAS -->
+    <div id="pagina-tecnologias" class="pagina">
+      <h2>Tecnologias e Referências</h2>
+      <div class="lista-techs">
+        <div class="card-tech">
+          <p>HTML5</p>
+          <span>Linguagem de marcação para estruturar as páginas.</span>
+        </div>
+        <div class="card-tech">
+          <p>CSS3</p>
+          <span>Folhas de estilo para deixar as páginas bonitas.</span>
+        </div>
+        <div class="card-tech">
+          <p>JavaScript</p>
+          <span>Linguagem usada para a lógica do sistema.</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p><strong>IFRN – Campus Santa Cruz</strong></p>
+    <p class="subtexto">Trabalho de Programação para Internet</p>
+    <p class="subtexto">Prof. Marcelo Figueiredo Barbosa Júnior</p>
+    <p class="integrantes">Júlia Pontes · Lindalva Gabrielly · Sarah Joquebede · Luiz Henrique</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+
+</body></html>
