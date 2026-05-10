@@ -9,15 +9,15 @@ let usuarios = {
 
 // Mensagens iniciais dos dois chats
 let mensagensChat1 = [
-  { autor: 'Sarah',   texto: 'Oi pessoal! Alguém já começou o trabalho de PI?' },
-  { autor: 'Júlia',   texto: 'Eu tô no CSS' },
-  { autor: 'Luiz',    texto: 'Eu tô configurando o layout' }
+  { autor: 'Sarah',   texto: 'Oi pessoal! Alguém já começou o trabalho de PPI? (é até dia 10/05)' },
+  { autor: 'Júlia',   texto: 'O meu grupo já. Eu tô no CSS.' },
+  { autor: 'Luiz',    texto: 'O meu tbm já começou. Tô configurando o layout' }
 ]
 
 let mensagensChat2 = [
-  { autor: 'Lindalva', texto: 'Como centraliza um elemento com CSS?' },
-  { autor: 'Luiz',     texto: 'Usa display flex com justify-content center!' },
-  { autor: 'Lindalva', texto: 'Funcionou' }
+  { autor: 'Lindalva', texto: 'Gnt, como centraliza um elemento com CSS??' },
+  { autor: 'Luiz',     texto: 'É só usar display flex com justify-content center!' },
+  { autor: 'Lindalva', texto: 'Ahh funcionou! Vlw!!' }
 ]
 
 let chatAtual = 1
